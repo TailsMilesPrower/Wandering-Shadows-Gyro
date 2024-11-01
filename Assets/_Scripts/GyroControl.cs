@@ -24,6 +24,10 @@ public class GyroControl : MonoBehaviour
         {
             gyro = Input.gyro;
             gyro.enabled = true;
+
+            cameraContainer.transform.rotation = Quaternion.Euler(90f, 90f, 0f);
+            rotation = new Quaternion(0, 0, 1, 0);
+
             return true;
         }
 
@@ -32,7 +36,10 @@ public class GyroControl : MonoBehaviour
 
     private void Update()
     {
-        //gyro.attitude = Time.deltaTime;
+        if (gyroEnabled)
+        {
+            transform.localRotation = gyro.attitude * rotation;
+        }
     }
 
 }
