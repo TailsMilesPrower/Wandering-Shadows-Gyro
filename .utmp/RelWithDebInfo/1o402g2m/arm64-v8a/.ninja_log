@@ -1,0 +1,12 @@
+# ninja log v5
+24	294	7524438129840911	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	a7c1d9e5964d2dfe
+295	426	7524438131157979	C:/Game Lab 1/Wandering Shadows - Repository/Wandering-Shadows-Gyro/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1o402g2m/obj/arm64-v8a/libswappywrapper.so	93c34532923ae041
+30	720	7524438134041854	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	b7dd361dfd9f6af0
+41	732	7524438134198181	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	da203ba69331520b
+10	746	7524438134330788	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	6f5e1b425966c340
+49	749	7524438134340824	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	10c9e5e2156d023
+57	780	7524438134664086	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	7ac2dd843f68004
+5	824	7524438135117070	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	b2b9942812e1326
+16	913	7524438136006446	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	7ac382810bdf9d73
+0	987	7524438136744090	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	358f2e9ff43e31d4
+987	1061	7524438137540994	C:/Game Lab 1/Wandering Shadows - Repository/Wandering-Shadows-Gyro/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1o402g2m/obj/arm64-v8a/libgame.so	22d8c2a1e35b176d
