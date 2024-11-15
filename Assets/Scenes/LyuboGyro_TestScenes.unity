@@ -1130,6 +1130,10 @@ PrefabInstance:
       propertyPath: dirLight
       value: 
       objectReference: {fileID: 1047523162}
+    - target: {fileID: 8160085400553935140, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: mask.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1387,7 +1391,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150972740}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d400b051835aa7f47bf5017a29c36a1a, type: 3}
   m_Name: 
@@ -1405,6 +1409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 2070096751}
+  cameraOffset: {x: 0, y: 40, z: 0}
 --- !u!1001 &1500153873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1638,7 +1643,7 @@ GameObject:
   - component: {fileID: 2116815371}
   - component: {fileID: 2116815372}
   m_Layer: 0
-  m_Name: ScreenRotator_Prefab
+  m_Name: ScreenRotation_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
