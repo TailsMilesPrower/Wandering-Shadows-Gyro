@@ -5,6 +5,7 @@ public class GyroSun : MonoBehaviour
     public GameObject objectToRotateSun;
     Quaternion targetRotation;
 
+    float currentYRotation = 0f;
 
     private void Start()
     {
@@ -13,7 +14,7 @@ public class GyroSun : MonoBehaviour
             Input.gyro.enabled = true;
         }
         
-        targetRotation = Quaternion.Euler(45, 0, 0);
+        targetRotation = Quaternion.Euler(0, 0, 0);
     }
 
     private void FixedUpdate()
@@ -26,8 +27,12 @@ public class GyroSun : MonoBehaviour
 
     void CheckRotation()
     {
-        float yRotation = objectToRotateSun.transform.eulerAngles.y + Input.gyro.rotationRateUnbiased.y;
-        targetRotation = Quaternion.Euler(45, yRotation, 0);
+        currentYRotation += Input.gyro.rotationRateUnbiased.z;
+
+        targetRotation = Quaternion.Euler(45, currentYRotation, 0);
+
+        //float yRotation = objectToRotateSun.transform.eulerAngles.y + Input.gyro.rotationRateUnbiased.y;
+        //targetRotation = Quaternion.Euler(45, yRotation, 0);
 
         /*
         if (Input.GetKey(KeyCode.Q))
